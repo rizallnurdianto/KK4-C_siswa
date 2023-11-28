@@ -1,6 +1,7 @@
 import { Text, View, TextInput, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
+
 import styles from './styles';
 
 export default function Home({ navigation }) {

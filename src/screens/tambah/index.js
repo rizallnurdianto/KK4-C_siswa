@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { Text, View, TextInput, TouchableOpacity, Image } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
+import BtnPrimary from '../../components/btnPrimary';
+
 import styles from './styles';
 
 export default function Tambah({ navigation }) {
@@ -44,12 +46,10 @@ export default function Tambah({ navigation }) {
         </View>
 
         <View style={styles.containerBtn}>
-          <TouchableOpacity style={styles.btnSimpan} onPress={handleAddScreen}>
-            <Text style={styles.btnSimpanText}>Simpan</Text>
-          </TouchableOpacity>
+        
         </View>
       </View> 
-
+      <BtnPrimary Text="Simpan" handle={handleAddScreen}/>
     </View>
     );
 }
